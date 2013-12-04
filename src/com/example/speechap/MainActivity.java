@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
  
     private ImageButton btnSpeak;
     private TextView txtText;
+    
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,10 @@ public class MainActivity extends Activity {
                 try {
                     startActivityForResult(intent, RESULT_SPEECH);
                     txtText.setText("");
+                    Toast t = Toast.makeText(getApplicationContext(),
+                            "Succes",
+                            Toast.LENGTH_SHORT);
+                    t.show();
                 } catch (ActivityNotFoundException a) {
                     Toast t = Toast.makeText(getApplicationContext(),
                             "Opps! Your device doesn't support Speech to Text",
