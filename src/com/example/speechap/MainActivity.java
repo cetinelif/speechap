@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
- 
+   //requestCodes
         switch (requestCode) {
         case RESULT_SPEECH: {
             if (resultCode == RESULT_OK && null != data) {
