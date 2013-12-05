@@ -37,9 +37,10 @@ public class MainActivity extends Activity {
  
                 Intent intent = new Intent(
                         RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                //recognizerIntent
  
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
- 
+                 
                 try {
                     startActivityForResult(intent, RESULT_SPEECH);
                     txtText.setText("");
