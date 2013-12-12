@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
                         RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
                 //recognizerIntent
                 //deneme..
+                //deneme2..
  
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
                  
