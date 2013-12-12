@@ -17,8 +17,10 @@ public class MainActivity extends Activity {
  
     protected static final int RESULT_SPEECH = 1;
  
+    //View ler tanýmlandý
     private ImageButton btnSpeak;
     private TextView txtText;
+    
     
  
     @Override
