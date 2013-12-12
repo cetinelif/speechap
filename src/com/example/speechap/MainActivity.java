@@ -32,13 +32,13 @@ public class MainActivity extends Activity {
  
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
  
+        //buton için click metodu oluþturldu
         btnSpeak.setOnClickListener(new View.OnClickListener() {
  
             @Override
             public void onClick(View v) {
  
-                Intent intent = new Intent(
-                        RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
                 //recognizerIntent
  
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
