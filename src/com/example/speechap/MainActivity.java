@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
     private ImageButton btnSpeak;
     private TextView txtText;
     
+    //yenilik
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
