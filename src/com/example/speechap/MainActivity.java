@@ -26,7 +26,8 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
- 
+        
+        //commitdeneme
         txtText = (TextView) findViewById(R.id.txtText);
  
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
