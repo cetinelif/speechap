@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
     private TextView txtText;
     
     //yenilik
+    
+    
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,12 @@ public class MainActivity extends Activity {
         });
  
     }
+    
+    /*
+     * 
+     * (non-Javadoc)
+     * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+     */
  
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
