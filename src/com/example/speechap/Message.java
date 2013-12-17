@@ -1,5 +1,7 @@
 package com.example.speechap;
 
-public class Message {
+import android.app.Activity;
+
+public class Message extends Activity{
 
 }
