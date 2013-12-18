@@ -3,12 +3,15 @@ package com.example.speechap;
 import java.util.ArrayList;
  
 import android.app.Activity;
+import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.telephony.SmsManager;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +22,11 @@ public class MainActivity extends Activity {
  
     private ImageButton btnSpeak;
     private TextView txtText;
+    private TextView txtno;
+    private TextView txtmsg;
+    private Button gonder;
+    
+    private String msg;
     
     //yenilik
     
@@ -30,6 +38,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
  
         txtText = (TextView) findViewById(R.id.txtText);
+        txtno=(TextView)findViewById(R.id.textView1);
+        
+        gonder=(Button)findViewById(R.id.button1);
  
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
  
@@ -59,6 +70,17 @@ public class MainActivity extends Activity {
                 }
             }
         });
+        gonder.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String no=txtno.getText().toString();
+				String sms=msg;
+				sendSMS(no, sms);
+				
+			}
+		});
  
     }
     
@@ -86,10 +108,22 @@ public class MainActivity extends Activity {
                         .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
  
                 txtText.setText(text.get(0));
+                msg=text.get(0).toString();
             }
+            
+          
             break;
         }
  
         }
+    }
+    
+    //sms gönderme fonksiyonu
+    private void sendSMS(String telefonNo, String mesaj)
+    {        
+        PendingIntent pi = PendingIntent.getActivity(this, 0,
+            new Intent(this, MainActivity.class), 0);                
+        SmsManager sms = SmsManager.getDefault();
+        sms.sendTextMessage(telefonNo, null, mesaj, pi, null);        
     }
 }
