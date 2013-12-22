@@ -69,6 +69,7 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
    //requestCodes
+   //deneme
         switch (requestCode) {
         case RESULT_SPEECH: {
             if (resultCode == RESULT_OK && null != data) {
