@@ -123,7 +123,7 @@ public class MainActivity extends Activity {
     {        
         PendingIntent pi = PendingIntent.getActivity(this, 0,
             new Intent(this, MainActivity.class), 0);                
-        SmsManager sms = SmsManager.getDefault();
+        android.telephony.SmsManager sms =android.telephony.SmsManager.getDefault();
         sms.sendTextMessage(telefonNo, null, mesaj, pi, null);        
     }
 }
