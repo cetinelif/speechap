@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
                     startActivityForResult(intent, RESULT_SPEECH);
                     txtText.setText("");
                     Toast t = Toast.makeText(getApplicationContext(),
-                            "Succes",
+                            "Baþarýlý!",
                             Toast.LENGTH_SHORT);
                     t.show();
                 } catch (ActivityNotFoundException a) {
