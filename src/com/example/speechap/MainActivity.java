@@ -28,8 +28,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
  
-        txtText = (TextView) findViewById(R.id.txtText);
- 
+        txtText = (TextView) findViewById(R.id.txtText); 
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
  
         //buton için click metodu oluþturldu
