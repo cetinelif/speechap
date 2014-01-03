@@ -29,8 +29,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name="AramaYap" android:label="@string/app_name">
+</activity>
+ 		<activity android:name="ContactBean" android:label="@string/app_name">
+ 		</activity>
          
-      
+      <activity android:name="ContactListActivity" android:label="@string/app_name">
+ 		</activity>
+ 		<activity android:name="ContactAdapter" android:label="@string/app_name">
+ 		</activity>
+ 		<activity android:name="SecilenKisi" android:label="@string/app_name">
+ 		</activity>
+ 		<activity android:name="Splash" android:label="@string/app_name">
+ 		      <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            
+        </activity>
+ 		
+         
     </application>
 
 </manifest>
