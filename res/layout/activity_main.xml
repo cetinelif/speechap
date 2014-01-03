@@ -26,13 +26,11 @@
         android:layout_marginTop="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
-    
     <Button
         android:id="@+id/secim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
-         />
+        android:text="Seçim" />
  
           <TextView
             android:id="@+id/textView1"
