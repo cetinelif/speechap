@@ -31,12 +31,14 @@ public class MainActivity extends Activity {
     //yenilik
     
     
+    //yenilik
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
- 
+        
+        //commitdeneme
         txtText = (TextView) findViewById(R.id.txtText);
         txtno=(TextView)findViewById(R.id.textView1);
         
@@ -51,7 +53,7 @@ public class MainActivity extends Activity {
  
                 Intent intent = new Intent(
                         RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-             
+                //recognizerIntent
  
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
                  
@@ -59,7 +61,7 @@ public class MainActivity extends Activity {
                     startActivityForResult(intent, RESULT_SPEECH);
                     txtText.setText("");
                     Toast t = Toast.makeText(getApplicationContext(),
-                            "Success",
+                            "Succes",
                             Toast.LENGTH_SHORT);
                     t.show();
                 } catch (ActivityNotFoundException a) {
@@ -103,7 +105,6 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
    //requestCodes
-   //deneme
         switch (requestCode) {
         case RESULT_SPEECH: {
             if (resultCode == RESULT_OK && null != data) {
