@@ -31,12 +31,14 @@ public class MainActivity extends Activity {
     //yenilik
     
     
+    //yenilik
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
- 
+        
+        //commitdeneme
         txtText = (TextView) findViewById(R.id.txtText);
         txtno=(TextView)findViewById(R.id.textView1);
         
