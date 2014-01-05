@@ -14,7 +14,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="142dp"
         android:background="@drawable/sms" />
-<Button
+
+    <Button
         android:id="@+id/aramayap_btn"
         android:layout_width="60dp"
         android:layout_height="70dp"
@@ -31,3 +32,14 @@
         android:layout_centerHorizontal="true"
         android:text="SMS Gönder"
         android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aramayap_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Arama Yap"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
