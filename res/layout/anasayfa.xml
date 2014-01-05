@@ -14,3 +14,20 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="142dp"
         android:background="@drawable/sms" />
+<Button
+        android:id="@+id/aramayap_btn"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/smsgonder_btn"
+        android:layout_below="@+id/smsgonder_btn"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/call" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smsgonder_btn"
+        android:layout_centerHorizontal="true"
+        android:text="SMS Gönder"
+        android:textColor="@android:color/black" />
