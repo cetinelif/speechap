@@ -21,8 +21,8 @@
         android:layout_below="@+id/list"
         android:background="@drawable/kirmizi"
         android:orientation="vertical" >
-        
-          <TextView
+
+        <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,8 +38,8 @@
 
             <requestFocus />
         </EditText>
-        
-         <TextView
+
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,3 +59,41 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/se" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/white"
+            android:text="İletiyi Gör" />
+
+        
+       
+        
+        <EditText
+            android:id="@+id/mesajicerik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+        
+        
+        
+
+        <Button
+            android:id="@+id/smsgonder_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:background="@drawable/send" />
+
+          <TextView
+              android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="İletiyi Gönder"
+              android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
