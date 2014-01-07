@@ -23,3 +23,23 @@
         android:layout_centerVertical="true"
         android:text="İleti İçin Mikrofona Basın Ve Konuşun"
         android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/devamet"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ok" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devamet"
+        android:layout_centerHorizontal="true"
+        android:text="Devam Et"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
